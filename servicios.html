@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | GuanaPostres</title>
+    <meta name="description"
+        content="Catálogo de servicios y postres de GuanaPostres: Pasteles personalizados, postres tradicionales, pasteles de boda y cupcakes.">
+    <link rel="canonical" href="https://guanapostres.com/servicios.html" />
+    <link rel="stylesheet" href="css/normalize.css?v=2">
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="nav__logo">
+                <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772423351/ChatGPT_Image_Mar_1_2026_09_48_57_PM_ydvdsn.png"
+                    alt="GuanaPostres Logo" width="100" height="auto" />
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav__menu" id="nav-menu">
+                <ul class="nav__list"
+                    style="display:flex; flex-direction:inherit; gap:1.5rem; justify-content:center; align-items:center;">
+                    <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav_home">Inicio</a></li>
+                    <li class="nav__item"><a href="index.html#esencia" class="nav__link" data-i18n="nav_essence">Nuestra
+                            Esencia</a></li>
+                    <li class="nav__item"><a href="index.html#sabores" class="nav__link" data-i18n="nav_flavors">Sabores
+                            Únicos</a></li>
+                    <li class="nav__item"><a href="servicios.html" class="nav__link" data-i18n="nav_services"
+                            style="color:var(--color-coral);">Servicios</a></li>
+                    <li class="nav__item"><a href="index.html#local" class="nav__link" data-i18n="nav_local">Local</a>
+                    </li>
+                    <li class="nav__item"><a href="index.html#contacto" class="nav__link"
+                            data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+                <div class="nav__controls">
+                    <button class="btn-icon" id="theme-toggle" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+                        <span class="theme-icon">☾</span>
+                    </button>
+                    <button class="btn-icon" id="lang-toggle" aria-label="Cambiar Idioma">
+                        <i class="fa-solid fa-language"></i> <span class="lang-text">ES</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="services-page">
+        <section class="services-header">
+            <div class="container">
+                <h1 data-i18n="nav_services">Catálogo de Servicios</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Filter Tabs -->
+                <div class="tabs-container">
+                    <button class="tab-btn active" data-filter="all" data-i18n="tab_all">Todos</button>
+                    <button class="tab-btn" data-filter="tradicionales" data-i18n="tab_trad">Postres
+                        Tradicionales</button>
+                    <button class="tab-btn" data-filter="personalizados" data-i18n="tab_custom">Pasteles
+                        Personalizados</button>
+                    <button class="tab-btn" data-filter="bodas" data-i18n="tab_wedding">Bodas</button>
+                    <button class="tab-btn" data-filter="cupcakes" data-i18n="tab_cupcakes">Cupcakes</button>
+                </div>
+
+                <!-- Catalog Grid -->
+                <div class="services-grid" id="services-grid">
+
+                    <!-- Postres Tradicionales -->
+                    <div class="service-item" data-category="tradicionales" data-title="Flan"
+                        data-desc="Delicioso flan tradicional bañado en caramelo." data-i18n-title="serv_flan"
+                        data-i18n-desc="serv_desc_flan">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412869/postretradicionalFlan_ck2vuw.jpg"
+                            alt="Flan" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_flan">Flan</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="tradicionales" data-title="Tres Leches"
+                        data-desc="El clásico de Costa Rica, un poderoso y jugoso tres leches con canela."
+                        data-i18n-title="serv_tresleches" data-i18n-desc="serv_desc_tresleches">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412869/postretradicionalTresLeches_dywo46.jpg"
+                            alt="Tres Leches" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_tresleches">Tres Leches</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="tradicionales" data-title="Arroz Con Leche"
+                        data-desc="Arroz con leche cremoso hecho con nuestra receta secreta de la abuela."
+                        data-i18n-title="serv_arroz" data-i18n-desc="serv_desc_arroz">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412888/postretradicionalArrozConLeche_siw8ii.jpg"
+                            alt="Arroz Con Leche" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_arroz">Arroz Con Leche</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="tradicionales" data-title="Buñuelos Encanelados"
+                        data-desc="Buñuelos crujientes bañados con leche condensada y canela."
+                        data-i18n-title="serv_bonuelos" data-i18n-desc="serv_desc_bonuelos">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412867/postretradicionalBo%C3%B1uelosEncaneladosConLecheCondesada_h7mgiu.jpg"
+                            alt="Buñuelos" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_bonuelos">Buñuelos Encanelados</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pasteles Personalizados -->
+                    <div class="service-item" data-category="personalizados" data-title="Pastel de Personajes (Mario)"
+                        data-desc="Pastel temático de Super Mario para los fanáticos de Nintendo."
+                        data-i18n-title="serv_pers_mario" data-i18n-desc="serv_desc_pers_mario">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412880/pastelpersonalizadoSuperMario_wkoq84.jpg"
+                            alt="Pastel de Personajes" class="service-item__img" loading="lazy" width="400"
+                            height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_pers_mario">Pastel de Personajes</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="personalizados" data-title="Pastel de Messi"
+                        data-desc="Pastel personalizado del astro del fútbol Lionel Messi."
+                        data-i18n-title="serv_pers_messi" data-i18n-desc="serv_desc_pers_messi">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412878/pastelpersonalizadoMessi_vcqynm.jpg"
+                            alt="Pastel de Messi" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_pers_messi">Pastel de Messi</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="personalizados" data-title="Pastel de Ronaldo"
+                        data-desc="Pastel temático de Cristiano Ronaldo (CR7)." data-i18n-title="serv_pers_ronaldo"
+                        data-i18n-desc="serv_desc_pers_ronaldo">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412879/pastelpersonalizadoRonaldo_e2ma13.jpg"
+                            alt="Pastel de Ronaldo" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_pers_ronaldo">Pastel de Ronaldo</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="personalizados" data-title="Pastel Espacial"
+                        data-desc="Magnífico pastel con diseño galáctico para una celebración fuera de este mundo."
+                        data-i18n-title="serv_pers_space" data-i18n-desc="serv_desc_pers_space">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772407569/galeria7_hbze9m.jpg"
+                            alt="Pastel Espacial" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_pers_space">Pastel Espacial</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="personalizados" data-title="Pastel Control de Video Juego"
+                        data-desc="Pastel con forma de mando de consola, perfecto para gamers."
+                        data-i18n-title="serv_pers_game" data-i18n-desc="serv_desc_pers_game">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772407568/galeria6_jmlgmp.jpg"
+                            alt="Pastel Gamer" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_pers_game">Pastel Control Gamer</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reposteria para Bodas -->
+                    <div class="service-item" data-category="bodas" data-title="Pastel de Bodas"
+                        data-desc="Nuestro clásico pastel de bodas adornado con flores comestibles, diseño personalizable de hasta 3 pisos."
+                        data-i18n-title="serv_wed_cake" data-i18n-desc="serv_desc_wed_cake">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412873/pasteldeBodas_gp8ozb.jpg"
+                            alt="Pastel de Bodas" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_wed_cake">Pastel de Bodas</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="bodas" data-title="Cupcakes y postres de Bodas"
+                        data-desc="Mesa de dulces para tu recepción de boda." data-i18n-title="serv_wed_cupcakes"
+                        data-i18n-desc="serv_desc_wed_cupcakes">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412883/postredeBodas_b6sjfu.jpg"
+                            alt="Postres de Bodas" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_wed_cupcakes">Cupcakes de Bodas</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cupcakes -->
+                    <div class="service-item" data-category="cupcakes" data-title="Cupcake de Chocolate"
+                        data-desc="Cupcake intenso de chocolate doble con cobertura." data-i18n-title="serv_cup_choc"
+                        data-i18n-desc="serv_desc_cup_choc">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772416344/ChatGPT_Image_Mar_1_2026_07_49_51_PM_aijubv.jpg"
+                            alt="Cupcake de Chocolate" class="service-item__img" loading="lazy" width="400"
+                            height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_cup_choc">Cupcake De Chocolate</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="cupcakes" data-title="Cupcake de Vainilla"
+                        data-desc="Clásico cupcake de vainilla relleno y esponjoso." data-i18n-title="serv_cup_van"
+                        data-i18n-desc="serv_desc_cup_van">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772416354/ChatGPT_Image_Mar_1_2026_07_52_18_PM_xlvpsa.jpg"
+                            alt="Cupcake de Vainilla" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_cup_van">Cupcake De Vainilla</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="cupcakes" data-title="Cupcake de Fresa"
+                        data-desc="Exquisito cupcake con glaseado y relleno de mermelada de fresa natural."
+                        data-i18n-title="serv_cup_straw" data-i18n-desc="serv_desc_cup_straw">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772418162/ChatGPT_Image_Mar_1_2026_08_22_25_PM_emlfhg.jpg"
+                            alt="Cupcake de Fresa" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_cup_straw">Cupcake De Fresa</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item" data-category="cupcakes" data-title="Cupcake de Crema"
+                        data-desc="Cupcake estilo pastel de crema, suave y cremoso." data-i18n-title="serv_cup_cream"
+                        data-i18n-desc="serv_desc_cup_cream">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772418266/ChatGPT_Image_Mar_1_2026_08_24_13_PM_priswx.jpg"
+                            alt="Cupcake de Crema" class="service-item__img" loading="lazy" width="400" height="300">
+                        <div class="service-item__content">
+                            <h3 data-i18n="serv_cup_cream">Cupcake De Crema</h3>
+                            <div class="service-item__actions">
+                                <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                                <button class="btn btn--primary btn-whatsapp-consult"><i
+                                        class="fa-brands fa-whatsapp"></i> <span
+                                        data-i18n="btn_consult">Consultar</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal for details -->
+    <div id="service-modal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal__content">
+            <button class="modal-close" aria-label="Cerrar modal"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="modal-title" style="margin-bottom:0.5rem;"></h3>
+            <p class="modal-desc"></p>
+        </div>
+    </div>
+
+    <!-- Watermark Badge -->
+    <a href="https://nextweb.co.cr" target="_blank" rel="noopener noreferrer" class="watermark-badge"
+        aria-label="Desarrollado por NextWeb CR">
+        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772083376/logo_h9plf1.jpg" alt="NextWeb CR Logo"
+            width="30" height="30">
+        <span>Desarrollado por <strong>NextWeb CR</strong></span>
+    </a>
+
+    <!-- Floating Icons -->
+    <a href="tel:00000000000" class="float-icon float-icon--phone" aria-label="Llamar">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="https://wa.me/00000000000" target="_blank" rel="noopener noreferrer" class="float-icon float-icon--ws"
+        aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="footer__social-link" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer__social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="footer__social-link" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer__links">
+                <a href="privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a>
+            </div>
+            <p class="footer__disclaimer" data-i18n="footer_disclaimer">
+                Esta no es una página web oficial. Es un sitio web de ejemplo y las imágenes/videos generados por IA no
+                buscan suplantar identidades.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <script src="js/theme.js?v=2"></script>
+    <script src="js/i18n.js?v=2"></script>
+    <script src="js/main.js?v=2"></script>
+    <script src="js/security.js?v=1"></script>
+    <script>
+        // Inline scripts moved to js/main.js for better security and maintainability
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuanaPostres | Hechos con amor, horneados con tradición</title>
+    <meta name="description" content="Descubre los mejores postres en Costa Rica con GuanaPostres.">
+
+    <link rel="stylesheet" href="css/normalize.css?v=1">
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="nav__logo">
+                <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772423351/ChatGPT_Image_Mar_1_2026_09_48_57_PM_ydvdsn.png"
+                    alt="GuanaPostres Logo" width="100" height="auto" />
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav__menu" id="nav-menu">
+                <ul class="nav__list"
+                    style="display:flex; flex-direction:inherit; gap:1.5rem; justify-content:center; align-items:center;">
+                    <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav_home">Inicio</a></li>
+                    <li class="nav__item"><a href="#esencia" class="nav__link" data-i18n="nav_essence">Nuestra
+                            Esencia</a></li>
+                    <li class="nav__item"><a href="#sabores" class="nav__link" data-i18n="nav_flavors">Sabores
+                            Únicos</a></li>
+                    <li class="nav__item"><a href="servicios.html" class="nav__link"
+                            data-i18n="nav_services">Servicios</a></li>
+                    <li class="nav__item"><a href="#local" class="nav__link" data-i18n="nav_local">Local</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link" data-i18n="nav_contact">Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav__controls">
+                    <button class="btn-icon" id="theme-toggle" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+                        <span class="theme-icon">☾</span>
+                    </button>
+                    <button class="btn-icon" id="lang-toggle" aria-label="Cambiar Idioma">
+                        <i class="fa-solid fa-language"></i> <span class="lang-text">ES</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section hero">
+            <div class="hero__slider">
+                <!-- Slide 1 (Video) -->
+                <div class="hero__slide active">
+                    <video autoplay muted loop playsinline class="hero__video-bg hero__bg">
+                        <source src="https://res.cloudinary.com/dicrov8ka/video/upload/v1772407547/herovideo_d4xndx.mp4"
+                            type="video/mp4">
+                    </video>
+                    <div class="hero__overlay"></div>
+                    <div class="container hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title" data-i18n="hero_title">Hechos con amor, horneados con tradición</h1>
+                            <p class="hero__subtitle" data-i18n="hero_subtitle">20 años endulzando momentos especiales
+                                en Costa
+                                Rica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 (Image 1) -->
+                <div class="hero__slide">
+                    <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772427535/ChatGPT_Image_Mar_1_2026_10_58_42_PM_yrtufj.jpg"
+                        alt="Postres tradicionales" class="hero__bg">
+                    <div class="hero__overlay"></div>
+                    <div class="container hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title" data-i18n="hero_img1_title">Autenticidad Costarricense</h1>
+                            <p class="hero__subtitle" data-i18n="hero_img1_sub">Somos GuanaPostres</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 (Image 2) -->
+                <div class="hero__slide">
+                    <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772407539/hero2_mksukt.jpg"
+                        alt="Dulzura" class="hero__bg">
+                    <div class="hero__overlay"></div>
+                    <div class="container hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title" data-i18n="hero_img2_title">Dulzura para cada celebración</h1>
+                            <p class="hero__subtitle" data-i18n="hero_img2_sub">Postres Únicos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="hero__slider-btn hero__slider-btn--prev" aria-label="Anterior slide">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="hero__slider-btn hero__slider-btn--next" aria-label="Siguiente slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <!-- Fixed CTA -->
+                <div class="hero__fixed-cta">
+                    <a href="#sabores" class="btn btn--primary" data-i18n="btn_see_desserts"><i
+                            class="fa-solid fa-cake-candles"></i> Ver Postres</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Esencia -->
+        <section id="esencia" class="section section--alt bg-texture-1">
+            <div class="container">
+                <h2 class="section__header" data-i18n="essence_title">Nuestra Esencia</h2>
+                <div class="essence__wrap">
+                    <div class="essence__img-container">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772407553/acercaReposteria_r1hpwt.jpg"
+                            alt="Acerca de GuanaPostres" class="essence__img" width="500" height="500">
+                        <div class="essence__decoration"></div>
+                    </div>
+                    <div class="essence__text">
+                        <p data-i18n="essence_text1">En GuanaPostres somos un emprendimiento familiar con más de 20 años
+                            llevando dulzura a los hogares costarricenses. Nacimos con la ilusión de compartir recetas
+                            tradicionales, sabores auténticos y la calidez que solo una cocina familiar puede ofrecer.
+                        </p>
+                        <p data-i18n="essence_text2">Desde nuestros inicios, hemos trabajado con ingredientes frescos y
+                            de alta calidad, cuidando cada detalle en la preparación y decoración de nuestros pasteles.
+                            Para nosotros, cada creación representa más que un postre: es parte de una celebración, un
+                            recuerdo especial y un momento que se comparte en familia.</p>
+                        <p data-i18n="essence_text3">A lo largo de estas dos décadas hemos acompañado cumpleaños, bodas,
+                            graduaciones y eventos especiales, creciendo gracias a la confianza y recomendación de
+                            nuestros clientes.</p>
+                        <p data-i18n="essence_text4">Hoy, en GuanaPostres, seguimos horneando con la misma pasión del
+                            primer día, combinando tradición, creatividad y dedicación para endulzar cada ocasión
+                            importante.</p>
+                        <a href="#clientes" class="btn btn--primary" style="margin-top:1rem;"
+                            data-i18n="btn_see_reviews">Ver Reseñas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sabores Unicos (Index Snippets) -->
+        <section id="sabores" class="section bg-texture-1">
+            <div class="container">
+                <h2 class="section__header" data-i18n="flavors_title">Sabores Únicos</h2>
+
+                <div class="flavors__grid">
+                    <div class="flavor-card" data-title="Pastel Personalizado" data-desc="Pastel Personalizado"
+                        data-i18n-title="flavors_custom_cakes" data-i18n-desc="flavors_desc_custom">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412878/pastelpersonalizadoMessi_vcqynm.jpg"
+                            alt="Pastel Personalizado" class="flavor-card__img" loading="lazy" width="300" height="225">
+                        <div class="flavor-card__body">
+                            <h3 data-i18n="flavors_custom_cakes">Pasteles Personalizados</h3>
+                        </div>
+                        <div class="flavor-card__overlay">
+                            <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                            <button class="btn btn--primary btn-whatsapp-consult"><i class="fa-brands fa-whatsapp"></i>
+                                <span data-i18n="btn_consult">Consultar</span></button>
+                        </div>
+                    </div>
+
+                    <div class="flavor-card" data-title="Tres Leches" data-desc="Postre Tradicional"
+                        data-i18n-title="flavors_traditional" data-i18n-desc="flavors_desc_trad">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412869/postretradicionalTresLeches_dywo46.jpg"
+                            alt="Postres Tradicionales" class="flavor-card__img" loading="lazy" width="300"
+                            height="225">
+                        <div class="flavor-card__body">
+                            <h3 data-i18n="flavors_traditional">Postres Tradicionales</h3>
+                        </div>
+                        <div class="flavor-card__overlay">
+                            <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                            <button class="btn btn--primary btn-whatsapp-consult"><i class="fa-brands fa-whatsapp"></i>
+                                <span data-i18n="btn_consult">Consultar</span></button>
+                        </div>
+                    </div>
+
+                    <div class="flavor-card" data-title="Pastel de Bodas" data-desc="Pastel para Bodas"
+                        data-i18n-title="flavors_wedding" data-i18n-desc="flavors_desc_wedding">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412873/pasteldeBodas_gp8ozb.jpg"
+                            alt="Pasteles para Bodas" class="flavor-card__img" loading="lazy" width="300" height="225">
+                        <div class="flavor-card__body">
+                            <h3 data-i18n="flavors_wedding">Pasteles Para Bodas</h3>
+                        </div>
+                        <div class="flavor-card__overlay">
+                            <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                            <button class="btn btn--primary btn-whatsapp-consult"><i class="fa-brands fa-whatsapp"></i>
+                                <span data-i18n="btn_consult">Consultar</span></button>
+                        </div>
+                    </div>
+
+                    <div class="flavor-card" data-title="Cupcakes" data-desc="Cupcakes Surtidos"
+                        data-i18n-title="flavors_cupcakes" data-i18n-desc="flavors_desc_cupcakes">
+                        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772412870/cupcakes_rb6rxd.jpg"
+                            alt="Cupcakes" class="flavor-card__img" loading="lazy" width="300" height="225">
+                        <div class="flavor-card__body">
+                            <h3 data-i18n="flavors_cupcakes">Cupcakes</h3>
+                        </div>
+                        <div class="flavor-card__overlay">
+                            <button class="btn btn--outline btn-details" data-i18n="btn_details">Detalles</button>
+                            <button class="btn btn--primary btn-whatsapp-consult"><i class="fa-brands fa-whatsapp"></i>
+                                <span data-i18n="btn_consult">Consultar</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flavors__actions">
+                    <a href="servicios.html" class="btn btn--outline" data-i18n="btn_see_more">Ver Más</a>
+                    <a href="https://calendar.app.google/5kMed6KAfzb6CEC1A" target="_blank" rel="noopener noreferrer"
+                        class="btn btn--primary" data-i18n="btn_book_quote"><i class="fa-regular fa-calendar-check"></i>
+                        Agendar Cotización</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calidad Unica -->
+        <section class="section section--alt bg-texture-2">
+            <div class="container">
+                <h2 class="section__header" data-i18n="quality_title">Calidad Única</h2>
+
+                <div class="quality__list">
+                    <div class="quality__item"><i class="fa-solid fa-check-circle"></i> <span
+                            data-i18n="quality_list1">Pasteles personalizados por diseño</span></div>
+                    <div class="quality__item"><i class="fa-solid fa-check-circle"></i> <span
+                            data-i18n="quality_list2">Pasteles para eventos (bodas, cumpleaños, graduaciones)</span>
+                    </div>
+                    <div class="quality__item"><i class="fa-solid fa-check-circle"></i> <span
+                            data-i18n="quality_list3">Decoración temática</span></div>
+                </div>
+
+                <div class="gallery__grid">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413614/galeria1_akrhrd.jpg"
+                        alt="Galeria 1" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413619/galeria2_glxyj3.jpg"
+                        alt="Galeria 2" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413622/galeria3_nxzjk7.jpg"
+                        alt="Galeria 3" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413626/galeria4_zkqj31.jpg"
+                        alt="Galeria 4" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413621/galeria5_ef4fij.jpg"
+                        alt="Galeria 5" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413629/galeria6_aklef8.jpg"
+                        alt="Galeria 6" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413605/galeria7_hfwqlh.jpg"
+                        alt="Galeria 7" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413609/galeria8_ke4ypx.jpg"
+                        alt="Galeria 8" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413608/galeria9_hx3guq.jpg"
+                        alt="Galeria 9" width="150" height="150" loading="lazy">
+                    <img class="gallery__img"
+                        src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772413610/galeria10_d0zrvg.jpg"
+                        alt="Galeria 10" width="150" height="150" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestros Clientes -->
+        <section id="clientes" class="section bg-texture-1">
+            <div class="container">
+                <h2 class="section__header" data-i18n="clients_title">Nuestros Clientes</h2>
+
+                <div class="clients__videos">
+                    <div class="video-wrap">
+                        <div style="padding:55% 0 0 0;position:relative;"><iframe
+                                src="https://player.vimeo.com/video/1169406240?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Video echo con inteligencia artificial"></iframe></div>
+                    </div>
+                    <div class="video-wrap">
+                        <div style="padding:55% 0 0 0;position:relative;"><iframe
+                                src="https://player.vimeo.com/video/1169409160?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Video realizado con inteligencia artificial"></iframe></div>
+                    </div>
+                </div>
+
+                <!-- Reseñas Carousel -->
+                <div class="reviews__slider">
+                    <div class="reviews__track" id="reviews-track"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto y Ubicacion -->
+        <section id="contacto" class="section section--alt bg-texture-2">
+            <div class="container contact__grid">
+
+                <!-- TOP ROW: Form & Basic Info -->
+                <div class="contact__top-row">
+                    <div class="contact__form">
+                        <h2 style="margin-bottom:0;" data-i18n="contact_title">Contáctanos</h2>
+                        <p style="margin-bottom:var(--spacing-md); opacity:0.8;">
+                            <span data-i18n="contact_phone">Teléfono: 00000000000</span><br>
+                            <span data-i18n="contact_email">Correo: reposteria@example.com</span>
+                        </p>
+
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="nombre" data-i18n="contact_name">Nombre</label>
+                                <input type="text" id="nombre" class="form-control" required
+                                    data-i18n-placeholder="contact_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo" data-i18n="contact_email_input">Correo</label>
+                                <input type="email" id="correo" class="form-control" required
+                                    data-i18n-placeholder="contact_email_input">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono" data-i18n="contact_phone_input">Teléfono</label>
+                                <input type="tel" id="telefono" class="form-control" required
+                                    data-i18n-placeholder="contact_phone_input">
+                            </div>
+                            <div class="form-group">
+                                <label for="servicio" data-i18n="contact_service">Repostería (Interés)</label>
+                                <select id="servicio" class="form-control" required>
+                                    <option value="1" data-i18n="opt_custom">1. Pasteles Personalizados</option>
+                                    <option value="2" data-i18n="opt_trad">2. Queques Tradicionales</option>
+                                    <option value="3" data-i18n="opt_tres">3. Tres Leches</option>
+                                    <option value="4" data-i18n="opt_wedding">4. Pasteles Para Bodas</option>
+                                    <option value="5" data-i18n="opt_kids">5. Pasteles Infantiles</option>
+                                    <option value="6" data-i18n="opt_cupcakes">6. Cupcakes</option>
+                                    <option value="7" data-i18n="opt_typical">7. Repostería Típica</option>
+                                    <option value="8" data-i18n="opt_other">8. Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="consulta" data-i18n="contact_message">Consulta</label>
+                                <textarea id="consulta" class="form-control" rows="4" required
+                                    data-i18n-placeholder="contact_message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary" style="margin-top:1rem;"
+                                data-i18n="contact_submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                    <div class="contact__info">
+                        <div class="info-card">
+                            <h3 data-i18n="contact_schedule_title">Horario de atención</h3>
+                            <p data-i18n="contact_schedule_text">LUN-SAB 7:00 am / 10:00pm - Domingo Cerrado</p>
+                        </div>
+
+                        <div class="info-card digital-clock-card"
+                            style="padding:0; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+                            <script src="https://cdn.logwork.com/widget/digital.js"></script>
+                            <a href="https://logwork.com/current-time-in-liberia-costa-rica-guanacaste"
+                                class="digital-clock" data-style="flip" data-size="220"
+                                data-timezone="America/Costa_Rica" data-language="en" style="color:var(--color-text);">
+                                Liberia, Costa
+                                Rica</a>
+                        </div>
+
+                        <div class="info-card" style="display:flex; align-items:center; justify-content:center;">
+                            <a class="weatherwidget-io" href="https://forecast7.com/es/10d63n85d44/liberia/"
+                                data-label_1="GUANACASTE PROVINCE" data-label_2="CLIMA" data-font="Open Sans"
+                                data-icons="Climacons Animated" data-theme="original" data-basecolor="#665d5d"
+                                style="width:100%;">GUANACASTE PROVINCE CLIMA</a>
+                            <script>
+                                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW: Extra Widgets -->
+                <div id="local" class="local-maps-section">
+                    <h3 class="local-maps-title" data-i18n="location_title">Nuestro Local</h3>
+
+                    <div class="local-maps-grid">
+                        <div class="local-maps-col">
+                            <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772415087/local_g2cgtk.jpg"
+                                alt="Local GuanaPostres" class="local-maps-hero-img" loading="lazy" width="600"
+                                height="400">
+                        </div>
+
+                        <div class="local-maps-col">
+                            <div class="map-tabs-nav">
+                                <button class="map-tab-btn active" data-target="google-map"
+                                    data-i18n="location_google">Google
+                                    Maps</button>
+                                <button class="map-tab-btn" data-target="waze-map"
+                                    data-i18n="location_waze">Waze</button>
+                            </div>
+
+                            <!-- Contenedor del Mapa -->
+                            <div class="map-tab-content active" id="google-map">
+                                <div class="map-facade-container" title="Google Maps"
+                                    data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60617.60704605025!2d-85.51711382490151!3d10.629533388934833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f757d2a8a1c08e5%3A0xb2f8a494fb368393!2sProvincia%20de%20Guanacaste%2C%20Liberia!5e1!3m2!1ses-419!2scr!4v1769628204690!5m2!1ses-419!2scr">
+                                    <span class="map-loader">Cargando mapa...</span>
+                                </div>
+                            </div>
+
+                            <div class="map-tab-content" id="waze-map" style="display: none;">
+                                <div class="map-facade-container" title="Waze"
+                                    data-src="https://embed.waze.com/iframe?zoom=16&lat=10.636270&lon=-85.430546&pin=1&ct=livemap">
+                                    <span class="map-loader">Cargando mapa...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="service-modal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal__content">
+            <button class="modal-close" aria-label="Cerrar modal"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="modal-title"></h3>
+            <p class="modal-desc" style="margin-top:1rem;"></p>
+        </div>
+    </div>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox__close" aria-label="Cerrar">&times;</button>
+        <img class="lightbox__img" src="" alt="Vista ampliada">
+    </div>
+
+    <!-- Watermark Badge -->
+    <a href="https://nextweb.co.cr" target="_blank" rel="noopener noreferrer" class="watermark-badge"
+        aria-label="Desarrollado por NextWeb CR">
+        <img src="https://res.cloudinary.com/dicrov8ka/image/upload/v1772083376/logo_h9plf1.jpg" alt="NextWeb CR Logo"
+            width="30" height="30">
+        <span>Desarrollado por <strong>NextWeb CR</strong></span>
+    </a>
+
+    <!-- Floating Icons -->
+    <a href="tel:00000000000" class="float-icon float-icon--phone" aria-label="Llamar">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="https://wa.me/00000000000" target="_blank" rel="noopener noreferrer" class="float-icon float-icon--ws"
+        aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="footer__social-link" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer__social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="footer__social-link" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer__links">
+                <a href="privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a>
+            </div>
+            <p class="footer__disclaimer" data-i18n="footer_disclaimer">
+                Esta no es una página web oficial. Es un sitio web de ejemplo y las imágenes/videos generados por IA no
+                buscan suplantar identidades.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!-- Vimeo Script -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Logic Scripts -->
+    <script src="js/theme.js?v=2"></script>
+    <script src="js/i18n.js?v=2"></script>
+    <script src="js/main.js?v=2"></script>
+    <script src="js/security.js?v=1"></script>
+    <script>
+        // Inline scripts moved to js/main.js for better security and maintainability
+    </script>
+</body>
+
+</html>
