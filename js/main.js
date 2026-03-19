@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const parent = e.target.closest('.service-item') || e.target.closest('.flavor-card');
             const itemName = parent ? parent.getAttribute('data-title') : 'sus postres';
             const msg = `Hola me interesaria saber mas sobre el postre ${itemName}`;
-            const number = "00000000000"; // replace with real number later
+            const number = "50670204207"; // replace with real number later
             window.open(`https://wa.me/${number}?text=${encodeURIComponent(msg)}`, '_blank');
         });
     });
